@@ -1,0 +1,50 @@
+{
+  "name": "dsh-second-opinion",
+  "version": "0.1.0",
+  "description": "先分析、再动手、最后交叉检查——给编码工作加一道第二意见，评审方可以换成你自己的（DeepSeek Harness 插件）",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./adapters/http": "./adapters/http.mjs",
+    "./adapters/exec": "./adapters/exec.mjs"
+  },
+  "files": [
+    "lib",
+    "adapters",
+    "docs",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node test/run.mjs"
+  },
+  "license": "MIT",
+  "author": "alxy1018-ctrl",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "code-review",
+    "second-opinion",
+    "agent",
+    "cordis"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alxy1018-ctrl/dsh-second-opinion.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alxy1018-ctrl/dsh-second-opinion/issues"
+  },
+  "homepage": "https://github.com/alxy1018-ctrl/dsh-second-opinion#readme",
+  "engines": {
+    "node": ">=20"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
