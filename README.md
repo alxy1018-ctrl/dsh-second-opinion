@@ -1,5 +1,10 @@
 # dsh-second-opinion
 
+中文 | [English](README.en.md)
+
+> **A second opinion for coding work (DeepSeek Harness plugin).** Analyze before acting, have the analysis reviewed by a second brain, then cross-check after the code is written and again after verification. The reviewer is yours to choose — a host subagent, any OpenAI-compatible endpoint, or a command you write; the plugin binds no vendor. Full English documentation: **[README.en.md](README.en.md)**.
+> The discipline text the plugin injects is in Chinese; the reviewer slot and all configuration are language-neutral.
+
 给编码工作加一道**第二意见**：动手前先分析、把分析交给另一个脑子看一眼，代码写完和验证做完再各看一次，
 多模块任务时两边分头写、互相查。
 
